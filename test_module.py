@@ -57,7 +57,7 @@ class UnitTests(unittest.TestCase):
     def test_two_days_later_with_day(self):
         actual = add_time("11:59 PM", "24:05", "Wednesday")
         expected = "12:04 AM, Friday (2 days later)"
-        self.assertEqual(actual, expected, 'Expected calling "add_time()" with "2:59 AM", "24:00", "Friday" to return "12:04 AM, Friday (2 days later)"')
+        self.assertEqual(actual, expected, 'Expected calling "add_time()" with "11:59 PM", "24:05", "Wednesday" to return "12:04 AM, Friday (2 days later)"')
 
     def test_high_duration_with_day(self):
         actual = add_time("8:16 PM", "466:02", "tuesday")
